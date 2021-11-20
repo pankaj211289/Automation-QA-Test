@@ -34,6 +34,11 @@ Note: by default, server.js is using your port 8080, feel free to change it in c
 $ npm run cy:run
 ```
 
+## Generate Report
+```
+$ node cypress\cucumber-html-report.js
+```
+
 Challengue Requirements:
 
 Two HTML files are provided:
