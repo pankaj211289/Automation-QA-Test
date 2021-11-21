@@ -10,12 +10,25 @@
   "author": "Lodgify QA Team",
   "license": "MIT",
   "devDependencies": {
-    "cypress": "^9.0.0"
+    "cypress": "^9.0.0",
+    "cypress-cucumber-preprocessor": "^4.3.0",
+    "lorem-ipsum": "^2.0.4",
+    "multiple-cucumber-html-reporter": "^1.18.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "stepDefinitions": "cypress/integration/tests/stepdefs",
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "reports/cucumber-json",
+      "filePrefix": "cypress-",
+      "fileSuffix": ".cucumber"
+    }
   },
   "scripts": {
     "dev-server": "node server/server.js",
     "install-all": "npm install && cd server && npm install",
     "cy:open": "npx cypress open",
-    "cy:run": "npx cypress run --browser chrome"
+    "cy:run": "npx cypress run --spec **/*.feature --headed --browser chrome"
   }
 }
