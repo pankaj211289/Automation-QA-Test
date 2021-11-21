@@ -1,23 +1,3 @@
-Open LodgifyHTML as a project to get started
-
-The following instructions use Bash, so make sure to install Git Bash before running the commands.
-
-1. Download Node.js from https://nodejs.org/es/download/ and then execute "$ npm run install-all". 
-2. You will need to start a local server to run tests, execute "$ npm run dev-server" in a different terminal, leave this terminal open.
-3. To run your test, you should test files inside "cypress/integration/testName.test.js" (where "testName" is the name of the test you're adding).
-4. Run the tests with $ "npm run cy:run"
-5. You should be able to run and check tests results with these steps, now you can proceed with the requirements below, which you will also find in the Test file.
-6. You can create folders for selectors anywhere, the whole structure is up to you, try not to hardcode and create a clean test structure.
-7. Make sure to do smart waits in case slowness on services.
-8. Tests should be able to run on any environment.
-
-## How we'd like to receive the solution?
-
-Clone this repository and upload it as a new public repository in your GitHub account
-Create a new branch in your repository
-Create a pull request with the requested functionality to unchanged master branch in your repository
-Share link to the PR with us
-
 Quick start commands:
 ## Installing
 ```
